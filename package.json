@@ -1,0 +1,23 @@
+{
+  "name": "fe-pro-arrays",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rammfall-edu/fe-pro-arrays.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rammfall-edu/fe-pro-arrays/issues"
+  },
+  "homepage": "https://github.com/rammfall-edu/fe-pro-arrays#readme",
+  "dependencies": {
+    "jest": "^27.4.4"
+  }
+}
