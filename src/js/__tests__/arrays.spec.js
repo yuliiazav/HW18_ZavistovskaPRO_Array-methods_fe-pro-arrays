@@ -53,8 +53,8 @@ describe('Array functions', () => {
 
       const callback = jest.fn();
 
-      all.map(originalArray, callback);
-      expect(callback).toHaveBeenNthCalledWith(1, originalArray[0], 0, originalArray);
+      all.reduce(originalArray, callback, 0);
+      expect(callback).toHaveBeenNthCalledWith(1, 0, originalArray[0], 0, originalArray);
     })
   })
 
@@ -69,7 +69,7 @@ describe('Array functions', () => {
 
       const callback = jest.fn();
 
-      all.map(originalArray, callback);
+      all.some(originalArray, callback);
       expect(callback).toHaveBeenNthCalledWith(1, originalArray[0], 0, originalArray);
     })
   })
@@ -85,7 +85,7 @@ describe('Array functions', () => {
 
       const callback = jest.fn();
 
-      all.map(originalArray, callback);
+      all.every(originalArray, callback);
       expect(callback).toHaveBeenNthCalledWith(1, originalArray[0], 0, originalArray);
     })
   })
