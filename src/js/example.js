@@ -17,7 +17,7 @@ const filterResult = filter(array, (item, index, array) => {
   return item > 1;
 });
 
-console.log(filterResult); // => [3]
+console.log(filterResult); // => [2, 3]
 
 
 const reduceResult = reduce(array, (previous, current, index, array) => {
