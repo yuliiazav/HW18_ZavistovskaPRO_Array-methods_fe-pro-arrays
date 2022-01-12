@@ -44,7 +44,7 @@ describe('Array functions', () => {
   })
 
   describe('reduce()', () => {
-    it('should return filtered new array', () => {
+    it('should return result of callback', () => {
       const originalArray = [1, 2, 3];
       const copiedArray = [...originalArray];
 
@@ -59,7 +59,7 @@ describe('Array functions', () => {
   })
 
   describe('some()', () => {
-    it('should return filtered new array', () => {
+    it('should return boolean', () => {
       const originalArray = [1, 2, 3];
       const copiedArray = [...originalArray];
 
@@ -75,7 +75,7 @@ describe('Array functions', () => {
   })
 
   describe('every()', () => {
-    it('should return filtered new array', () => {
+    it('should return boolean', () => {
       const originalArray = [1, 2, 3];
       const copiedArray = [...originalArray];
 
