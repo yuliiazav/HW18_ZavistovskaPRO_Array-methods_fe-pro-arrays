@@ -38,6 +38,6 @@ const everyResult = every(array, (item, index, array) => {
   return item > 2;
 });
 
-console.log(someResult); // => false
+console.log(everyResult); // => false
 
 
