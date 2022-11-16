@@ -51,13 +51,22 @@ function filter(array, callback) {
  Фишка задания сделать свою реализацию, чтобы понять, как он работает под капотом. Для перебора советую использовать for цикл
  Помните, что вы передаете функцию, которая ожидает 3 аргумента, текущий элемент, индекс и сам массив. Автоматическая проверка будет это учитывать.
 */
+// function reduce(array, callback, initialValue) {
+//   let result = initialValue;
+//   for (let i = 0; i < array.length; i = i + 1) {
+//     result = callback(null, initialValue, array[i], i, array);
+//   }
+//   return result;
+// }
+
 function reduce(array, callback, initialValue) {
   let result = initialValue;
-  for (let i = 0; i < array.length; i = i + 1) {
-    result = callback.call(null, initialValue, array[i], i, array);
+  for (let i of array) {
+    result = callback(null, initialValue, array[i], i, array);
   }
   return result;
 }
+
 
 /* Функция принимает в себе первым аргументом массив, вторым функцию которая будет вызываться для каждого элемента массива
  вот документация https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
