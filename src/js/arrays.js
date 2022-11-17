@@ -54,7 +54,7 @@ function filter(array, callback) {
 function reduce(array, callback, initialValue) {
   let result = initialValue;
   for (let i = 0; i < array.length; i = i + 1) {
-    result = callback(initialValue, array[i], i, array);
+    result = callback(result, array[i], i, array);
   }
   return result;
 }
